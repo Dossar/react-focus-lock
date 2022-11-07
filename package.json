@@ -22,6 +22,7 @@
     "build-storybook": "NODE_ENV=es2015 build-storybook",
     "package-self": "package-self",
     "size": "yarn build && yarn size-limit",
+    "clobber": "rm -rf node_modules/ && npm cache clean --force",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "repository": {
@@ -48,13 +49,7 @@
     "url": "https://github.com/theKashey/react-focus-lock/issues"
   },
   "peerDependencies": {
-    "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
-    }
+    "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -71,7 +66,7 @@
     "@storybook/addon-links": "^5.1.8",
     "@storybook/react": "^5.1.8",
     "@testing-library/react": "^12.0.0",
-    "@types/react": "^18.0.8",
+    "@types/react": "^16.8.19",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
